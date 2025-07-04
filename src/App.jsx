@@ -12,7 +12,7 @@ import Certificates from "./components/Certificates";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Footer from "./components/footer";
 function Layout() {
   const location = useLocation();
@@ -41,7 +41,7 @@ function Layout() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/education" element={<Education />} />
               <Route path="/skills" element={<Skills />} />
-              <Route path="/contact" element={<Contact />} />
+              {/* <Route path="/contact" element={<Contact />} /> */}
             </Routes>
           </div>
         )}
