@@ -1,0 +1,40 @@
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #000000;
+}
+
+.education-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.education-item {
+  background: #FEEBF6;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border-left: 4px solid #000000;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.education-item:hover {
+  background: #FCD8CD;
+  transform: translateY(-3px);
+}
+
+.education-item span {
+  margin-right: 10px;
+  font-size: 18px;
+}

@@ -1,0 +1,221 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, #root {
+  min-height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #FEEBF6;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+
+ 
+}
+
+.background-blobs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background:#fafafa;
+  filter: blur(100px);
+  border-radius: 50%;
+  animation: float 20s infinite alternate;
+}
+
+.blob1 {
+  top: 10%;
+  left: 20%;
+  background-color: #ffffff;
+}
+
+.blob2 {
+  bottom: 15%;
+  right: 15%;
+  background-color: #f472b6;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(50px); }
+}
+/* .tab-content {
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  max-width: 1000px;
+} */
+.tab-content {
+  margin-top: 20px;
+  padding: 20px;
+  color: rgb(8, 8, 8);
+  text-align: left;
+  width: 100%;
+  max-width: none;
+}
+
+.info-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+
+/* Main layout */
+ .main-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+/* When not home, make content full width */
+.main-container-full {
+  justify-content: flex-start;
+  padding: 40px 20px;
+}
+
+.tab-content-full {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/* .card-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+} */
+
+.card-wrapper {
+    width: auto;
+    position: relative;
+    display: flex
+;
+    align-items: stretch;
+    z-index: 2;
+    max-width: 650px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+/* Profile Card */
+.profile-card {
+  /* width: 100%; */
+  max-width: none;
+  background:#FEEBF6;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #FEEBF6;
+}
+
+.cv-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 1px solid rgb(29, 29, 29);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  background: transparent;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.cv-button:hover {
+  background:#FCD8CD;
+  color: black;
+}
+
+/* Graph area */
+.graph-buttons-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.graph-line {
+  height: 1px;
+  background:#FCD8CD;
+  margin-bottom: 10px;
+}
+
+.graph-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.graph-buttons button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 25px;
+  color: white;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.graph-buttons button:hover {
+  background: white;
+  color: black;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 20px;
+  }
+
+  .graph-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .graph-buttons button {
+    width: 100%;
+  }
+
+  .cv-button {
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,75 @@
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #000000;
+}
+
+.experience-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+/* Grid layout for experience cards */
+.exp-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual experience card */
+.exp-card {
+  display: flex;
+  gap: 15px;
+  background: #FEEBF6;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid #000000;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.exp-card:hover {
+  background: #FCD8CD;
+  transform: translateY(-3px);
+}
+
+/* Icon style */
+.exp-icon {
+  font-size: 28px;
+  color: #000000;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Content text styles */
+.exp-content h3 {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+  color: #000000;
+}
+
+.exp-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #161515;
+  margin: 4px 0;
+}
+
+.exp-duration {
+  font-size: 13px;
+  color: #3e3e3e;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .exp-card {
+    flex-direction: column;
+  }
+
+  .exp-icon {
+    font-size: 24px;
+  }
+}
