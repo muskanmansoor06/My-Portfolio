@@ -1,4 +1,3 @@
-import React from "react";
 import "./Certificates.css";
 
 import cert1 from "../assets/cert1.PNG";

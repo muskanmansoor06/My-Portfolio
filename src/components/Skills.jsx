@@ -1,5 +1,3 @@
-// src/components/Skills.jsx
-import React from "react";
 import { FaCode, FaWordpress, FaDatabase, FaTools, FaUsers } from "react-icons/fa";
 import "./Skills.css";
 

@@ -1,15 +1,12 @@
-// src/components/Footer.jsx
-import React from "react";
 import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
 } from "react-icons/fa";
 
-import "./Footer.css";
+import "./footer.css";
 
 const Footer = () => {
   return (

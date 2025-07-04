@@ -1,5 +1,3 @@
-// src/components/GraphButtons.jsx
-import React from "react";
 import { Link } from "react-router-dom";
 import "./GraphsButtons.css"; // (optional: move styles to separate file)
 

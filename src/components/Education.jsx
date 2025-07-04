@@ -1,5 +1,3 @@
-// components/Education.jsx
-import React from "react";
 import { FaGraduationCap, FaUniversity, FaBook } from "react-icons/fa";
 import "./Education.css";
 

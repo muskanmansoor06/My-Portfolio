@@ -1,6 +1,3 @@
-// components/About.jsx
-import React from 'react';
-
 const About = () => (
   <div className="info-section">
     <h2>About Me</h2>

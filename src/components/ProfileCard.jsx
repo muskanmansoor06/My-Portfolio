@@ -1,5 +1,3 @@
-// src/components/ProfileCard.jsx
-import React from "react";
 import profileImage from "../assets/profile.png";
 import cvFile from "../assets/my-cv.pdf";
 

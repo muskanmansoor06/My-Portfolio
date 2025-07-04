@@ -1,5 +1,3 @@
-// src/components/Experience.jsx
-import React from "react";
 import { FaBriefcase, FaUsers, FaHome } from "react-icons/fa";
 import "./Experience.css";
 
