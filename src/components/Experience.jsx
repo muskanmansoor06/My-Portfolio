@@ -6,19 +6,19 @@ const Experience = () => (
     <h2 className="experience-title">Professional Experience</h2>
 
     <div className="exp-cards-wrapper">
-      {/* 1. Sales */}
+      {/* 1. React Internship */}
       <div className="exp-card">
         <div className="exp-icon"><FaBriefcase /></div>
         <div className="exp-content">
-          <h3>Sales Executive – Innovega</h3>
+          <h3>React Intern – Innovega</h3>
           <p className="exp-duration">Duration: 3 Months</p>
           <p>
-            Communicated with clients via LinkedIn & social media. Developed client-handling and communication skills that now support my freelance development work.
+            Developed responsive UI components using React.js, integrated REST APIs, and collaborated with the development team on real-time web projects.
           </p>
         </div>
       </div>
 
-      {/* 2. Team */}
+      {/* 2. Team Collaboration */}
       <div className="exp-card">
         <div className="exp-icon"><FaUsers /></div>
         <div className="exp-content">
@@ -29,7 +29,6 @@ const Experience = () => (
         </div>
       </div>
 
-     
     </div>
   </div>
 );
