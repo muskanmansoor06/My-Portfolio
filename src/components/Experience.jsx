@@ -6,7 +6,20 @@ const Experience = () => (
     <h2 className="experience-title">Professional Experience</h2>
 
     <div className="exp-cards-wrapper">
-      
+       {/* 2. Team Collaboration */}
+      <div className="exp-card">
+        <div className="exp-icon"><FaUsers /></div>
+        <div className="exp-content">
+          <h3>Freelance Web Developer</h3>
+          <p>
+            Worked on various real time development projects for different clients.
+Gained hands on experience in building complete web solutions from scratch.
+Focused on writing clean code and delivering projects on time.
+          </p>
+        </div>
+      </div>
+
+
       <div className="exp-card">
         <div className="exp-icon"><FaBriefcase /></div>
         <div className="exp-content">
@@ -22,16 +35,7 @@ my freelancing career as a developer
         </div>
       </div>
 
-      {/* 2. Team Collaboration */}
-      <div className="exp-card">
-        <div className="exp-icon"><FaUsers /></div>
-        <div className="exp-content">
-          <h3>Team Collaboration at Aptech</h3>
-          <p>
-            Participated in internal competitions and events like TechFest and PetBot Exhibition. Worked with teams using Git and collaborated on large scale websites.
-          </p>
-        </div>
-      </div>
+     
 
     </div>
   </div>
